@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/main.css">
+  <title>List Task</title>
+</head>
+
+<body>
+  <div class="wrap-container">
+    <div class="wrap-container-create-edit">
+      <h1 class="title">New Task</h1>
+      <div class="content-add-edit-task">
+        <input class="mr-b20 wd-80" placeholder="Add new Task..." />
+        <div class="description mr-b20">
+          <label>Description</label>
+          <textarea></textarea>
+        </div>
+        <div class="option-task mr-b20">
+          <div class="option-task-item">
+            <label>Due Date</label>
+            <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+              min="2018-06-07T00:00" max="2018-06-14T00:00">
+          </div>
+          <div class="option-task-item">
+            <label>Piority</label>
+            <select class="option-piority">
+              <option>Low</option>
+              <option>Normal</option>
+              <option>High</option>
+            </select>
+          </div>
+        </div>
+        <button class="btn btn-add-edit btn-green wd-80 mr-t20">Add</button>
+      </div>
+    </div>
+    <div class="wrap-container-list">
+      <h1 class="title">To Do List</h1>
+      <div class="enter-name-task">
+        <input class="mr-b20 wd-100" placeholder="Search..." />
+      </div>
+      <ul class="list-task">
+        <li class="item">
+          <div class="item-action">
+            <label class="checkbox-container">Do homework
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <div class="item-action-button">
+              <button class="btn btn-action btn-iris-blue w-100px mr-r10">Detail</button>
+              <button class="btn btn-action btn-red w-100px">Remove</button>
+            </div>
+          </div>
+          <div class="content-add-edit-task">
+            <input class="mr-b20 wd-80" placeholder="Add new Task..." />
+            <div class="description mr-b20">
+              <label>Description</label>
+              <textarea></textarea>
+            </div>
+            <div class="option-task mr-b20">
+              <div class="option-task-item">
+                <label>Due Date</label>
+                <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+                  min="2018-06-07T00:00" max="2018-06-14T00:00">
+              </div>
+              <div class="option-task-item">
+                <label>Piority</label>
+                <select class="option-piority">
+                  <option>Low</option>
+                  <option>Normal</option>
+                  <option>High</option>
+                </select>
+              </div>
+            </div>
+            <button class="btn btn-add-edit btn-green wd-80 mr-t20">Update</button>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-action">
+            <label class="checkbox-container">Do homework
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <div class="item-action-button">
+              <button class="btn btn-action btn-iris-blue w-100px mr-r10">Detail</button>
+              <button class="btn btn-action btn-red w-100px">Remove</button>
+            </div>
+          </div>
+        </li>
+        <li class="item">
+          <div class="item-action">
+            <label class="checkbox-container">Learn something
+              <input type="checkbox" checked="checked">
+              <span class="checkmark"></span>
+            </label>
+            <div class="item-action-button">
+              <button class="btn btn-action btn-iris-blue w-100px mr-r10">Detail</button>
+              <button class="btn btn-action btn-red w-100px">Remove</button>
+            </div>
+          </div>
+        </li>
+        <div class="bulk-action">
+          <label>Due Date</label>
+          <div class="item-action">
+            <div class="item-action-button">
+              <button class="btn btn-action btn-blue w-120px h-35 mr-r10">Done</button>
+              <button class="btn btn-action btn-red h-35 w-120px">Remove</button>
+            </div>
+          </div>
+          </li>
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

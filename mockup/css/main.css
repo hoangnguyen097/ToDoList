@@ -1,0 +1,361 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section {
+  display: block;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* HTML5 hidden-attribute fix for newer browsers */
+*[hidden] {
+  display: none;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Css */
+.mr-t20 {
+  margin-top: 20px !important;
+}
+
+.mr-r10 {
+  margin-right: 10px !important;
+}
+
+.mr-b20 {
+  margin-bottom: 20px !important;
+}
+
+.btn {
+  height: 30px;
+  color: #FFFFFF;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+}
+
+.btn-green {
+  background-color: #5CB85C;
+}
+
+.btn-blue {
+  background-color: #2196F3;
+}
+
+.btn-iris-blue {
+  background-color: #00BCD4;
+}
+
+.btn-red {
+  background-color: #E7534F;
+}
+
+.wd-80 {
+  width: 80%;
+}
+
+.wd-100 {
+  width: 100%;
+}
+
+.w-100px {
+  width: 100px;
+}
+
+.w-120px {
+  width: 120px;
+}
+
+.h-35 {
+  height: 35px;
+}
+
+#container {
+  height: 100%;
+}
+
+.wrap-container {
+  display: flex;
+  margin: 0 auto;
+  height: 100%;
+  width: 80%;
+  border: 1px solid;
+  min-width: 630px;
+}
+
+.wrap-container .wrap-container-create-edit {
+  width: 45%;
+}
+
+.wrap-container .wrap-container-list {
+  width: 55%;
+  position: relative;
+  border-left: 1px solid;
+  min-width: 430px;
+}
+
+.wrap-container label {
+  display: block;
+  font-weight: bold;
+}
+
+.wrap-container .title {
+  padding: 20px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.option-task .option-task-item {
+  width: 40%;
+  min-width: 200px;
+}
+
+.option-task-item label {
+  margin-bottom: 5px;
+}
+
+.option-task-item select {
+  padding: 5px 5px;
+}
+
+.option-task input {
+  min-width: 200px;
+}
+
+.option-piority {
+  width: 100%;
+  height: 30px;
+  padding-left: 2px;
+}
+
+.mySelect__value-container {
+  height: 30px;
+}
+
+.mySelect__control {
+  min-height: unset !important;
+}
+
+.mySelect__dropdown-indicator {
+  padding: 4px !important;
+}
+
+.mySelect__input {
+  display: none !important;
+}
+
+.wrap-container .content-add-edit-task,
+.wrap-container .enter-name-task {
+  padding: 0 20px;
+  text-align: center;
+}
+
+.enter-name-task input:not([type='datetime-local']),
+.content-add-edit-task input:not([type='datetime-local']) {
+  height: 30px;
+  padding-left: 2px;
+  border: 1.7px solid silver;
+  border-radius: 5px;
+}
+
+.content-add-edit-task .description {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.description textarea {
+  width: 100%;
+  height: 100px;
+}
+
+.option-task {
+  display: flex;
+  text-align: left;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: space-between;
+}
+
+.wrap-container .list-task {
+  padding: 0 20px;
+  overflow-y: auto;
+}
+
+.calc-145 {
+  height: calc(100vh - 145px);
+}
+
+.calc-210 {
+  height: calc(100vh - 210px);
+}
+
+.item-action-button button {
+  font-size: 13px;
+}
+
+.wrap-container .list-task .content-add-edit-task {
+  padding: 10px 0;
+  border: 1px solid;
+  border-top: 0;
+}
+
+.list-task .item:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.list-task .item .item-action,
+.wrap-container .bulk-action {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+  border: 1px solid;
+  padding: 0 10px;
+}
+
+.wrap-container .bulk-action {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  border: 0;
+  background-color: #fff;
+  border-top: 1px solid;
+}
+
+
+/* Create a custom checkbox */
+/* The container */
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.wrap-container .checkbox-container {
+  display: block;
+  font-weight: normal;
+  position: relative;
+  padding-left: 35px;
+  padding-top: 5px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: solid 2px #ededed;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkbox-container input:checked~.checkmark {
+  background-color: white;
+  border: 1px solid black;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkbox-container input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkbox-container .checkmark:after {
+  left: 11px;
+  top: -5px;
+  width: 4px;
+  height: 16px;
+  border: solid black;
+  border-width: 0 2px 3px 0;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+}
+
+/* responsive */
+@media only screen and (max-width: 1600px) {
+  .option-task {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .option-task .option-task-item:first-child {
+    margin-bottom: 20px;
+  }
+}
