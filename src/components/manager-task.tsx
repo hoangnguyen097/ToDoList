@@ -66,7 +66,6 @@ export default function ManagerTask() {
    * @param typeActionTask 
    */
   const onActionTask = (task: TaskType, typeActionTask: string) => {
-    console.log("on actionTask")
     if (task.taskName === '') {
       alert(MESSAGE_VALIDATE.TASK_NAME_IS_EMPTY);
       return;
@@ -115,8 +114,6 @@ export default function ManagerTask() {
       }
 
       case ACTION_TASK_TYPE.REMOVE_DISPLAY: {
-        console.log("remove")
-        console.log(task.taskId)
         let listTaskClone = _.cloneDeep(listTaskDisplay);
         let indexTask = listTaskDisplay.findIndex(elm => elm.taskId === task.taskId);
         if (indexTask >= 0) {

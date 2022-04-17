@@ -33,7 +33,6 @@ const CreateEditTask: React.FC<ICreateEditTaskProps> = (props) => {
    *  Action to task (update, remove, remove tasks check)
    */
   const actionTaskClick = () => {
-    console.log("action task chlick")
     if (props.actionTask) {
       props.actionTask(
         {
